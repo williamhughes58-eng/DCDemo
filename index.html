@@ -92,7 +92,7 @@ body {
 		</style>
 		<link id="-gd-engine-icon" rel="icon" type="image/png" href="index.icon.png" />
 <link rel="apple-touch-icon" href="index.apple-touch-icon.png"/>
-<style>#fs-btn{position:fixed;top:10px;right:10px;z-index:99999;background:rgba(0,0,0,.6);color:#fff;border:2px solid #fff;border-radius:6px;padding:8px 12px;font-family:sans-serif;font-size:14px;cursor:pointer;}html.maximized,body.maximized{margin:0;padding:0;overflow:hidden;}body.maximized #canvas{position:fixed!important;top:0!important;left:0!important;width:100vw!important;height:100vh!important;z-index:1;}</style><button id="fs-btn">Fullscreen</button><script>document.addEventListener('DOMContentLoaded',function(){var btn=document.getElementById('fs-btn');var maximized=false;btn.addEventListener('click',function(){var el=document.documentElement;if(el.requestFullscreen){el.requestFullscreen().catch(function(){});}else if(el.webkitRequestFullscreen){el.webkitRequestFullscreen();}maximized=!maximized;document.body.classList.toggle('maximized',maximized);document.documentElement.classList.toggle('maximized',maximized);btn.textContent=maximized?'Exit Fullscreen':'Fullscreen';window.dispatchEvent(new Event('resize'));});});</script>
+
 	</head>
 	<body>
 		<canvas id="canvas">
